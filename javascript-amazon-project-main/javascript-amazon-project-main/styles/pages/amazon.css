@@ -26,6 +26,7 @@
     grid-template-columns: repeat(7, 1fr);
   }
 }
+  
 
 /* This @media means when the screen width is 1600px or
    less, we will divide the grid into 6 columns. */
