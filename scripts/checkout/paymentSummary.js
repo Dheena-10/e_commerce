@@ -47,5 +47,5 @@ export function renderPaymentSummary(){
             Place your order
           </button>
   `;
-  document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
+  document.querySelector('.js-payment-summary').innerHTML = paymentSummary;
 }
