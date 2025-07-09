@@ -109,7 +109,7 @@ function isEmptyCart(){
 
 async function loadCartItems() {
   loadFromStorage();
-  const res = await fetch('/templates/cartItem.html');
+  const res = await fetch('templates/cartItem.html');
   const template = await res.text();
   let cartItemHTML = '';
 
