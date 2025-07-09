@@ -3,7 +3,7 @@ import {getProductWithKeyword} from './products.js'
 
 // loadNavbar
 export function loadNavbar() {
-  fetch('../templates/navbar.html')
+  fetch('templates/navbar.html')
     .then(res => {
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);
