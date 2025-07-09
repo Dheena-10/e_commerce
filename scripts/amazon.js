@@ -1,4 +1,4 @@
-import { cart, addToCart } from '../data/cart.js';
+import { cart, addToCart, loadFromStorage } from '../data/cart.js';
 import { products, getProductWithKeyword } from '../data/products.js';
 
 let productHTML = '';
@@ -60,6 +60,8 @@ products.forEach((product) => {
 
 document.querySelector('.js-product-grid').innerHTML = productHTML;
 
+
+
 function updateCartQuantity() {
   let cartQuantity = 0;
   cart.forEach((cartItem) => {
@@ -69,6 +71,7 @@ function updateCartQuantity() {
   //console.log(cart);
   document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
+
 
 function setAddToCardClickEvent(){
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
