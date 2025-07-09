@@ -1,0 +1,103 @@
+.main {
+  max-width: 1100px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-top: 140px;
+  margin-bottom: 100px;
+
+  /* margin-left: auto;
+     margin-right auto;
+     Is a trick for centering an element horizontally
+     without needing a container. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-section{
+  display: flex;
+}
+
+.review-cart{
+  width: 100%;
+  text-align: center;
+}
+
+.cart-summary{
+  width: 45%;
+  text-align: center;
+}
+
+.cart-item-card {
+  display: flex;
+  padding: 1.4rem;
+  align-items: center;
+  gap: 1.4rem;
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.cart-item-card >  img{
+  height: 150px;
+  width: 150px;
+}
+
+.cart-item-card > div {
+  text-align: start;
+  width: 250px;
+}
+
+.cart-item-card > div >  p:nth-of-type(1){
+  font-weight: bold;
+}
+
+.cart-item-card > div >  p:nth-of-type(2){
+  padding: 4px 8px;
+  width: max-content;
+  border-radius: 4px;
+  background-color: orange;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+.cart-item-card > div >  p:nth-of-type(3){
+  font-weight: bold;
+  color: red;
+}
+
+.cart-item-card > div >  button{
+  font-weight: bold;
+  color: gray;
+  margin: 8px 0px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.cartItems-radio-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.cart-summary > div{
+  text-align: start;
+  margin-left: 2.4rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.cart-summary > div > p{
+  font-weight: bold;
+  margin: 8px;
+}
+
+.cart-summary > div > p:nth-of-type(4){
+  font-weight: bold;
+  margin-top: 8px;
+  border-top: 2px solid gray;
+  padding-top: 8px;
+}
