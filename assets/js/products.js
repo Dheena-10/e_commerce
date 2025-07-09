@@ -2,7 +2,7 @@ import {setAddToCardClickEvent} from './cart.js'
 
 async function fetchProducts() {
   try {
-    const res = await fetch('/assets/data/products.json');
+    const res = await fetch('assets/data/products.json');
     if (!res.ok) {
       throw new Error(`HTTP error! Status: ${res.status}`);
     }
@@ -27,7 +27,7 @@ async function renderProducts() {
 
 async function loadProducts(products) {
   try {
-    const res = await fetch('/templates/product.html');
+    const res = await fetch('templates/product.html');
     const template = await res.text();
 
     let productHTML = '';
