@@ -4,7 +4,7 @@ let cart = [];
 
 function loadFromStorage() {
   const storedCart = localStorage.getItem('cart');
-  cart = storedCart ? JSON.parse(storedCart) : null;
+  cart = storedCart ? JSON.parse(storedCart) : [];
 }
 
 function saveToStorage() {
